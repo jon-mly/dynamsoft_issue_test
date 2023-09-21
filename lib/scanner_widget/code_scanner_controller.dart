@@ -12,9 +12,6 @@ class CodeScannerController {
     this.onCameraSetupEnded,
   });
 
-  static const String _licenseKey =
-      "DLS2eyJoYW5kc2hha2VDb2RlIjoiMTAxMzcxNzgyLVRYbE5iMkpwYkdWUWNtOXFYMlJpY2ciLCJvcmdhbml6YXRpb25JRCI6IjEwMTM3MTc4MiIsIm1haW5TZXJ2ZXJVUkwiOiJodHRwczovL21sdHMuZHluYW1zb2Z0LmNvbS8iLCJzdGFuZGJ5U2VydmVyVVJMIjoiaHR0cHM6Ly9zbHRzLmR5bmFtc29mdC5jb20vIiwiY2hlY2tDb2RlIjo2NTY3NDA0ODl9";
-
   final VoidCallback? onCameraPermissionDenied;
   final VoidCallback? onCameraSetupEnded;
 
@@ -92,7 +89,8 @@ class CodeScannerController {
     // /!\ ensure that this part is called once the Widget is displayed
     _captureCameraView = DCVCameraView();
 
-    await DCVBarcodeReader.initLicense(_licenseKey);
+    await DCVBarcodeReader.initLicense(
+        const String.fromEnvironment("DYNAMSOFT_KEY", defaultValue: ""));
 
     _captureBarcodeReader = await DCVBarcodeReader.createInstance();
     _captureCameraEnhancer = await DCVCameraEnhancer.createInstance();
