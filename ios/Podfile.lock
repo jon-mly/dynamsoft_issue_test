@@ -1,0 +1,39 @@
+PODS:
+  - dynamsoft_capture_vision_flutter (1.2.2):
+    - DynamsoftBarcodeReader (= 9.6.20)
+    - DynamsoftCameraEnhancer (= 2.3.12)
+    - Flutter
+  - DynamsoftBarcodeReader (9.6.20)
+  - DynamsoftCameraEnhancer (2.3.12)
+  - Flutter (1.0.0)
+  - permission_handler_apple (9.1.1):
+    - Flutter
+
+DEPENDENCIES:
+  - dynamsoft_capture_vision_flutter (from `.symlinks/plugins/dynamsoft_capture_vision_flutter/ios`)
+  - Flutter (from `Flutter`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+
+SPEC REPOS:
+  trunk:
+    - DynamsoftBarcodeReader
+    - DynamsoftCameraEnhancer
+
+EXTERNAL SOURCES:
+  dynamsoft_capture_vision_flutter:
+    :path: ".symlinks/plugins/dynamsoft_capture_vision_flutter/ios"
+  Flutter:
+    :path: Flutter
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+
+SPEC CHECKSUMS:
+  dynamsoft_capture_vision_flutter: f007f6620bade95eb65231c85902ef64033e2b04
+  DynamsoftBarcodeReader: 666141039518d161d31a0e5e78286f7855a51264
+  DynamsoftCameraEnhancer: 67d756227429d27bda20b58d3b03905592d9fde6
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  permission_handler_apple: e76247795d700c14ea09e3a2d8855d41ee80a2e6
+
+PODFILE CHECKSUM: 516b016fa1d325b8d0dd9dfb61c18998fc092a53
+
+COCOAPODS: 1.12.1

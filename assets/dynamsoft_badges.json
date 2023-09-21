@@ -1,0 +1,57 @@
+{
+  "FormatSpecificationArray":
+  [
+    {
+      "Name": "ExcludeScannedCodes",
+      "BarcodeTextRegExPattern": "^(?!000490200000131).*$"
+    }
+  ],
+  "ImageParameter":
+  {
+    "BarcodeFormatIds": ["BF_CODE_128","BF_DATAMATRIX"],
+    "BarcodeFormatIds_2": ["BF2_NULL"],
+    "DeblurLevel": 9,
+    "DeblurModes":
+    [
+      {"Mode": "DM_DEEP_ANALYSIS"}
+    ],
+    "Description": "",
+    "ExpectedBarcodesCount": 2,
+    "FormatSpecificationNameArray": [
+      "ExcludeScannedCodes"
+    ],
+    "LocalizationModes":
+    [
+      {
+        "IsOneDStacked": 0,
+        "LibraryFileName": "",
+        "LibraryParameters": "",
+        "Mode": "LM_SCAN_DIRECTLY",
+        "ScanDirection": 0,
+        "ScanStride": 0
+      },
+      {
+        "LibraryFileName": "",
+        "LibraryParameters": "",
+        "Mode": "LM_CONNECTED_BLOCKS"
+      }
+    ],
+    "ImagePreprocessingModes":
+    [
+      {
+        "LibraryFileName": "",
+        "LibraryParameters": "",
+        "Mode": "IPM_GRAY_SMOOTH"
+      },
+      {
+        "LibraryFileName": "",
+        "LibraryParameters": "",
+        "Mode": "IPM_GENERAL"
+      }
+    ],
+    "MaxAlgorithmThreadCount": 1,
+    "Name": "Settings",
+    "Timeout": 1000000
+  },
+  "Version": "3.0"
+}
